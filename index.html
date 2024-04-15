@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Strength Checker</h2>
+       
+        <div class="input-password">
+            <input type="password" id="password" oninput="checkPasswordStrength()" placeholder="Enter your password">
+            <p id="letter" class="invalid"><span class="hidden" id="hiddenletter"><i class="fa fa-check"></i></span> <b>Lowercase</b></p>
+            <p id="capital" class="invalid"><span class="hidden" id="hiddencapital"><i class="fa fa-check"></i></span> <b>Uppercase</b></p>
+            <p id="number" class="invalid"><span class="hidden" id="hiddennumber"><i class="fa fa-check"></i></span> <b>Number</b></p>
+            <p id="symbol" class="invalid"><span class="hidden" id="hiddensymbol"><i class="fa fa-check"></i></span> <b>Symbol</b></p>  
+            <p class="msgStr" id="message"><b>Your Password is </b> <b><span id="strength"></span></b></p>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
